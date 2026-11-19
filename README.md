@@ -1,32 +1,65 @@
-# React + TypeScript + Vite
+# ZelaCidade - Front-end (React + Vite + TypeScript)
+ 
+Aplicação web (SPA) da **zeladoria colaborativa ZelaCidade**, projeto da Global Solution 2026/2 (tema **CitizenTech**) da FIAP, disciplina *Front-End Design Engineering*.
+ 
+## Objetivo
+ 
+O cidadão vê um buraco, um poste apagado, lixo acumulado ou um ponto de alagamento, reclama e nunca sabe se alguém fez algo. A prefeitura recebe tudo misturado e não sabe o que atacar primeiro.
+ 
+O ZelaCidade resolve isso com uma interface simples e responsiva, na qual:
+ 
+- o **morador** registra o problema (categoria, bairro e endereço), confirma ocorrências de outros moradores com o botão **"Eu também vi"** e acompanha o status;
+- a **prefeitura** vê as ocorrências ordenadas por prioridade e os bairros com mais problemas.
+**ODS:** 11 (Cidades e comunidades sustentáveis), com apoio do 16 (Instituições eficazes).
+ 
+## Integrantes
+ 
+| Nome | RM | Turma |
+|---|---|---|
+| Rafael Macedo | 569313 | `1TDSPY` |
+| Eliza Duarte | 572989 | `1TDSPY` |
+| Gustavo Rapozo | 573513 | `1TDSPY` |
+| Julia Freitas | 568627 | `1TDSPY` |
+| Felipe Kenji | 572358 | `1TDSPY` |
+ 
+## Links
+ 
+| Item | URL |
+|---|---|
+| GitHub | `https://github.com/Rafaomm/global-solution-2026-2-front-end.git` |
+| Aplicação na Vercel | `https://global-solution-2026-2-front-end.vercel.app` |
+| API Java (Render) | `https://global-solution-2026-2-java.onrender.com/` |
+| Vídeo no YouTube (até 3 min) | `https://youtu.be/cplWoy9h5rU` |
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Tecnologias
+ 
+- [React](https://react.dev/) 19
+- [Vite](https://vite.dev/) 6
+- TypeScript
+- [Tailwind CSS](https://tailwindcss.com/) 4 (plugin `@tailwindcss/vite`)
+- React Router (rotas estáticas e rota com parâmetro)
+- Fetch API para todas as chamadas HTTP
+- Oxlint (lint)
+- Git e GitHub (versionamento)
+- Vercel (deploy do front) e Render (deploy da API Java)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Estrutura de pastas
+ 
 ```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+.
+├── public/                  # favicon e arquivos estáticos
+├── src/
+│   ├── components/          # componentes reutilizáveis (Header, Footer, CardOcorrencia, Loading, Mensagem...)
+│   ├── pages/               # uma página por rota
+│   ├── services/            # funções de acesso à API (fetch)
+│   ├── types/               # interfaces TypeScript (Ocorrencia, Bairro, Categoria, Usuario...)
+│   ├── App.tsx              # definição das rotas
+│   ├── main.tsx             # ponto de entrada
+│   └── index.css            # import do Tailwind
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── vercel.json
+└── README.md
+```
