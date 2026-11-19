@@ -1,12 +1,12 @@
-# ZelaCidade - Front-end (React + Vite + TypeScript)
+# Zelalerta - Front-end (React + Vite + TypeScript)
  
-Aplicação web (SPA) da **zeladoria colaborativa ZelaCidade**, projeto da Global Solution 2026/2 (tema **CitizenTech**) da FIAP, disciplina *Front-End Design Engineering*.
+Aplicação web (SPA) da **zeladoria colaborativa Zelalerta**, projeto da Global Solution 2026/2 (tema **CitizenTech**) da FIAP, disciplina *Front-End Design Engineering*.
  
 ## Objetivo
  
 O cidadão vê um buraco, um poste apagado, lixo acumulado ou um ponto de alagamento, reclama e nunca sabe se alguém fez algo. A prefeitura recebe tudo misturado e não sabe o que atacar primeiro.
  
-O ZelaCidade resolve isso com uma interface simples e responsiva, na qual:
+O Zelalerta resolve isso com uma interface simples e responsiva, na qual:
  
 - o **morador** registra o problema (categoria, bairro e endereço), confirma ocorrências de outros moradores com o botão **"Eu também vi"** e acompanha o status;
 - a **prefeitura** vê as ocorrências ordenadas por prioridade e os bairros com mais problemas.
