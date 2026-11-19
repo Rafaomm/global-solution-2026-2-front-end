@@ -10,7 +10,7 @@ const PASSOS = [
   { titulo: 'Você acompanha', texto: 'Cada mudança de status fica na linha do tempo: em análise, em atendimento, resolvida.' }, 
 ] 
  
-// Demonstração local do mecanismo de prioridade (não chama a API). 
+
 function DemoPrioridade() { 
   const [confirmacoes, setConfirmacoes] = useState(6) 
   const [confirmado, setConfirmado] = useState(false) 
